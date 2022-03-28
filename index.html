@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+    <title>CNEX Labs</title>
+</head>
+
+<body>
+    <main>
+        <img src="images/skyline-split-sf.png" alt="" class="skyline skyline-fade">
+
+        <div class="dark-toggle">
+            <!-- Rounded switch -->
+            <label class="switch">
+                <input type="checkbox" class="toggle-btn">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <nav id="navbar">
+            <div class="nav-list">
+                <a class="logo" href="#">CNEX <span class="logo-labs">LABS</span></a>
+            </div>
+            <ul class="nav-list nav-side" class="hover-underline-animation">
+                <li>
+                    <a href="#about" class="nav-content">About</a>
+                </li>
+                <li>
+                    <a href="#product" class="nav-content">Technology</a>
+                </li>
+                <li>
+                    <a href="#applications" class="nav-content">Applications</a>
+                </li>
+                <li>
+                    <a href="#company" class="nav-content">Company</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-content"></span>Contact<span class="logo-quote"></span></a>
+                </li>
+
+            </ul>
+        </nav>
+
+        <header class="main-header">
+            <h1>A NEW WORLD</h1>
+            <h1>OF DATA</h1>
+            <!-- <img src="images/cool-image.png" alt="" class="cool-img">
+            <img src="images/cool-image.png" alt="" class="cool-img2"> -->
+        </header>
+        <i class="fa-solid fa-arrow-down"></i>
+        <section class="about container" id="about">
+            <div class="section-header">
+                <h2>Leading the Evolution of Storage</h2>
+                <h2>Beyond the Black Box</h2>
+                <hr class="header-underline">
+            </div>
+
+            <p class="about-text">
+                CNEX is a privately held start-up company founded in 2013 by semiconductor industry veterans in Silicon
+                Valley, and funded by venture capital and strategic investments from Fortune 500 companies in storage
+                and networking. CNEX is chartered to deliver innovative system solutions in the form of semiconductors
+                and software. CNEX SSD controllers deliver high-performance with low and
+                predictable latency, and provide flexibility for software-defined-storage with host-based FTL, and
+                Ethernet I/O for storage fabric scalability.
+            </p>
+        </section>
+        <section class="product-container" id="product">
+            <div class="section-header">
+                <h2>Product Technology</h2>
+                <hr class="header-underline">
+            </div>
+            <article class="product-grid">
+                <div>
+                    <div class="product-header">
+                        <img src="images/product-logo-3.png" alt="">
+                        <h3>Advanced FTL Control</h3>
+                    </div>
+                    <p>In addition to NVMe-compliant operation, CNEX SSD controllers support other operational modes,
+                        including LightNVM, which enable full host control over Data Placement, I/O scheduling, and
+                        other application-specific optimizations, in both kernel and user space.</p>
+                </div>
+                <div>
+                    <div class="product-header">
+                        <img src="images/product-logo2.png" alt="">
+                        <h3>Network Scalability</h3>
+                    </div>
+                    <p>CNEX SSD controller ASICs incorporate native 10GbE I/O interfaces with NVMoE to enable efficient,
+                        low-latency scaling to complement both PCIe and Ethernet-based switching, from simple SSD
+                        fanout, to modern storage fabric implementations.</p>
+                </div>
+                <div>
+                    <div class="product-header">
+                        <img src="images/product-logo.png" alt="">
+                        <h3>Hardware Acceleration</h3>
+                    </div>
+                    <p>The CNEX SSD controllers enable key FTL functionality to be “hardware accelerated” for
+                        low-latency and maximum throughput for optimal performance from today’s 3D-NAND, as well as new
+                        and emerging NVM technologies.</p>
+                </div>
+            </article>
+        </section>
+
+
+        <section class="applications" id="applications">
+            <div class="section-header">
+                <h2>Applications</h2>
+                <hr class="header-underline">
+            </div>
+            <article class="applications-list">
+                <div class="imageBox">
+                    <img src="images/datacenter.jpeg" alt="" class="projectImg">
+                </div>
+                <div class="application-container">
+                    <h2 class="projectText projectTitle">Data Center</h2>
+                    <p class="projectText projectSubText">Datacenter customers are rapidly redefining the traditional
+                        partitions between storage, networking,
+                        and
+                        compute to achieve incredible levels of efficiency and scalability. Datacenter customers use
+                        CNEX
+                        products to innovate beyond the limits of traditional commodity storage devices, and gain
+                        significant
+                        advantages in performance, control, scalability, and overall power efficiency.</p>
+                </div>
+            </article>
+            <hr class="line-break">
+            <article class="applications-list ">
+                <div class="imageBox">
+                    <img src="images/storage.jpeg" alt="" class="projectImg ssd-image">
+                </div>
+                <div class="application-container">
+                    <h2 class="projectText projectTitle">Storage</h2>
+                    <p class="projectText projectSubText">Advances in Non-Volatile-Media and networking technology are
+                        driving an evolution in storage products, from JBOFs to all-flash arrays. Storage vendors are
+                        tasked with providing dense storage, which can be scaled, and dynamically provisioned to address
+                        a wide range of work-loads and QoS demands. Storage vendors use CNEX products to achieve
+                        application-specific performance and functionality, and native NVMoE fabric connectivity for
+                        efficient scaling.</p>
+                </div>
+            </article>
+            <hr class="line-break">
+            <article class="applications-list">
+                <div class="imageBox">
+                    <img src="images/ssd.jpeg" alt="" class="projectImg">
+                </div>
+                <div class="application-container">
+                    <h2 class="projectText projectTitle">SSD</h2>
+                    <p class="projectText projectSubText">CNEX has teamed with NAND vendors and other industry leaders
+                        in Datacenter, Storage, and Networking, to develop a new generation of SSD controllers that
+                        offer host interface flexibility, from NVMe to LightNVM, with options for native fabric
+                        connectivity. Customers use CNEX SSD controllers to deliver differentiated SSD solutions for
+                        low-power and high-performance in M.2, U.2, U.3, HHHL, EDSFF and other form-factors.</p>
+                </div>
+            </article>
+        </section>
+
+        <section class="company" id="company">
+            <div class="section-header">
+                <h2>Company</h2>
+                <hr class="header-underline">
+            </div>
+            <h3>Leadership</h3>
+            <div class="leadership">
+                <!-- <h2>Leadership</h2> -->
+                <div>
+                    <img src="images/company1.png" alt="">
+                    <p>Alan Armstrong</p>
+                </div>
+                <div>
+                    <img src="images/company2.png" alt="">
+                    <p>Alan Armstrong</p>
+                </div>
+                <div>
+                    <img src="images/company3.png" alt="">
+                    <p>Alan Armstrong</p>
+                </div>
+                <div>
+                    <img src="images/company4.png" alt="">
+                    <p>Alan Armstrong</p>
+                </div>
+            </div>
+            <h3>Board of Directors</h3>
+            <div class="board-flex">
+                <div>
+                    <h4>Alan Armstrong</h4>
+                    <p>CNEX Labs</p>
+                </div>
+                <div>
+                    <h4>Li-Bu Tan</h4>
+                    <p>Walden International</p>
+                </div>
+                <div>
+                    <h4>Ben Yu</h4>
+                    <p>Sierra Ventures</p>
+
+                </div>
+            </div>
+            <div class="board-flex">
+                <div>
+                    <h4>Alan Armstrong</h4>
+                    <p>CNEX Labs</p>
+                </div>
+                <div>
+                    <h4>Li-Bu Tan</h4>
+                    <p>Walden International</p>
+                </div>
+                <div>
+                    <h4>Ben Yu</h4>
+                    <p>Sierra Ventures</p>
+
+                </div>
+            </div>
+        </section>
+        <section class="clients">
+            <div class="section-header">
+                <h2>Clients</h2>
+                <hr class="header-underline">
+            </div>
+        </section>
+
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

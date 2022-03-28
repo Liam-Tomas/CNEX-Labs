@@ -1,0 +1,454 @@
+:root {
+    --bg-color: #161616;
+    --bg-color-faded: #161616aa;
+    --primary-color: #483698;
+    --primary-color-light: #7e6df2;
+    --primary-color-blue: #209cdd;
+    --text-primary: #f8f8f8;
+    --text-grey: #929292;
+    --text-muted: #999;
+}
+
+html.dark {
+    --bg-color: #f8f8f8;
+    --text-primary: #000000;
+    --text-muted: rgb(0, 0, 0);
+    --bg-color-faded: #f8f8f8aa;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(https://obsidian.md/images/starfield.svg);
+    background-repeat: repeat-x;
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    font-family: 'Bitter', serif;
+    font-weight: 300;
+    transition: .5s;
+}
+
+a {
+    all: unset;
+}
+
+
+nav a {
+    padding: 0rem 1rem;
+
+}
+
+li, ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    font-weight: 300;
+}
+
+
+.section-header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2.1rem;
+    font-weight: 900;
+}
+
+.section-header h2 {
+    font-weight: 600
+}
+
+
+/* Nav section */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    background-color: var(--bg-color-faded);
+    z-index: 300;
+    top: 0;
+    left: 0;
+    height: auto;
+    transition: .8s;
+}
+
+.nav-list {
+    display: flex;
+    font-size: 1.4rem;
+    align-items: center;
+    padding: 1.7rem 2rem;
+    transition: .6s;
+    font-weight: 600;
+
+}
+
+.nav-content {
+    color: var(--text-muted)
+}
+
+.nav-list a {
+    padding: 0rem 1.3rem;
+    cursor: pointer;
+}
+
+.logo {
+    font-size: 2.5rem;
+    font-weight: 700;
+    z-index: 1;
+    color: var(--text-primary)
+}
+
+.logo-labs {
+    color: var(--primary-color-blue);
+}
+
+
+/* Title Section */
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-size: 3.4rem;
+}
+
+.ofdata {
+    font-weight: 500;
+}
+
+header h1:first-of-type {
+    font-weight: 400;
+}
+
+header h1:last-of-type {
+    font-weight: 600;
+    /* color:var(--text-muted) */
+}
+
+.subfeature {
+    /* padding: 25px 50px;
+    margin: 10px 20px 40px 20px; */
+    border-radius: 10px;
+    background-color: var(--background-primary-alt);
+    box-shadow: 0 1px 1px 1px rgb(0 0 0 / 80%);
+    cursor: default;
+    color: var(--text-muted);
+    transition: all 100ms ease-in-out;
+}
+
+/* About Section */
+
+.about {
+    padding-top: 13rem;
+}
+
+p {
+    line-height: 1.45;
+}
+
+.about p {
+    padding: 0rem 14rem;
+    padding-top: 3rem;
+    font-size: 1.55rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--text-muted);
+    font-family: inter;
+}
+
+.container h2 {
+    font-size: 3rem;
+}
+
+.about h2:last-of-type {
+    color: var(--text-grey);
+    font-size: 2.7rem;
+    padding-top: 1rem;
+}
+
+.header-underline {
+    width: 700px;
+    height: 1.5px;
+    background-color: var(--primary-color-blue);
+    border: none;
+    margin-top: 2rem
+}
+
+
+.cool-img {
+    position: absolute;
+    bottom: -5%;
+    left: 0%;
+    max-width: 18%;
+
+}
+
+
+.cool-img2 {
+    position: absolute;
+    bottom: -6%;
+    right: 0%;
+    max-width: 18%;
+    transform: rotate(180deg);
+}
+
+.img-move {
+    transform: translatey(60px)
+}
+
+/* Product Technology section */
+.product-container {
+    padding: 11rem 10rem;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    grid-gap: 2.5rem;
+    padding-top: 4.5rem
+}
+
+.product-container p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.2;
+    color: var(--text-muted)
+}
+
+.product-header h3 {
+    padding: 2rem 0rem;
+    font-size: 1.7rem;
+    ;
+    font-weight: 700;
+}
+
+/* Applications */
+
+.applications {}
+
+.applications-list {
+    display: flex;
+    padding: 4rem 6rem;
+}
+
+.line-break {
+    margin: 1rem 7rem;
+    height: .1px;
+    background-color: rgb(52, 52, 52);
+    border: none;
+}
+
+.projectImg {
+    max-width: 100%;
+    max-height: auto;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    padding: 0rem 0rem;
+    border-radius: 30px;
+    z-index: -1;
+}
+
+.applications-list {
+    transform: translateY(30%);
+    opacity: 0;
+    transition: opacity .5s, transform .5s;
+}
+
+.application-show {
+    transform: translateX(0%);
+    transition: opacity 1s, transform .6s;
+    opacity: 1;
+}
+
+.imageBox {
+    width: 300%;
+    padding-right: 2rem;
+}
+
+.projectTitle {
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+    font-weight: 500;
+}
+
+.projectSubText {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.2;
+    color: var(--text-muted)
+}
+
+/* COMPANY section */
+.company {
+    margin: 9rem 0rem;
+}
+
+.leadership {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+}
+
+.leadership img {
+    padding: 0rem 3rem;
+}
+
+.leadership p {
+    padding: 0rem 3rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.company h3 {
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
+    color: var(--text-muted);
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+/* Board of Directors */
+
+.board-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 4rem;
+    font-size: 1.5rem;
+}
+
+.board-flex div {
+    padding: 0rem 3rem;
+}
+
+/* Clients */
+
+.clients .section-header {
+    margin-bottom: 7rem;
+    margin-top: 0rem;
+}
+
+
+.skyline {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 100;
+    bottom: -37%;
+    left: 0%;
+    right: 0%;
+    z-index: -1;
+    transition: .6s;
+    opacity: .8;
+}
+
+.skyline-faded {
+    opacity: .3;
+}
+
+
+
+/* Arrow */
+
+
+.fa-arrow-down {
+    color: var(--primary-color-blue);
+    font-size: 3rem;
+    position: absolute;
+    left: 50%;
+    bottom: 1%;
+    opacity: .7
+}
+
+
+
+
+
+/* Dark Toggle */
+
+/* The switch - the box around the slider */
+.dark-toggle {
+    position: absolute;
+    right: 4.5%;
+    top: 12.5%;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 58px;
+    height: 32px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--bg-color);
+    border: 1px solid #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 24px;
+    width: 24px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: var(--primary-color-blue);
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px var(--primary-color-blue);
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
